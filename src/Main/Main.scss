@@ -1,0 +1,25 @@
+.main{
+  width: 1140px;
+  height: 100vh;
+  background-color: aliceblue;
+  border-radius: 50px;
+  margin: 0 auto;
+  
+  .text{
+    width: 507px;
+    font-size: 39px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-left: 300px;
+    
+    .text1{
+      color: #0039C7;
+    }
+  }
+}
+
+.main-div{
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px 30px 30px 50px;
+}
