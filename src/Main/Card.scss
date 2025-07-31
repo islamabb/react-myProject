@@ -3,15 +3,17 @@
   height: 200px;
   display: flex;
   margin-left: 10px;
+
   
   .card-photo{
     width: 110px;
     height: 195px;
     border-radius: 0 35px 35px 0;
+    box-shadow: -13px 0px 6px -1px rgba(173, 255, 0, 0.7);
   }
   .Card{
     width: 208px;
-    height: 180px;
+    height: 179px;
     background-color: #0039C7;
     color: aliceblue;
     border-radius: 35px 0 0 35px;
@@ -28,12 +30,14 @@
     padding: 6px 5px 6px 5px;
     background-color: #ADFF00;
     cursor: pointer;
+    border: #ADFF00;
+    margin-right: 5px;
   }
 
   .btn-like{
     background-color: #0039C7;
     width: 30px;
-    height: 25px;
+    height: 28px;
     border-radius: 5px;
     border: 1px solid #ADFF00;
     cursor: pointer;

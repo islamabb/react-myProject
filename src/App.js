@@ -9,7 +9,6 @@ function App() {
       <Header/>
       <HeaderTwo/>
       <Main/>
-      
     </div>
   );
 }
