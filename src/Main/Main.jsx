@@ -1,62 +1,32 @@
-import "./Main.scss"
-import Card from "./Card"
+import React from "react";
+import "./Main.scss";
+import Card from "./Card";
 
-function Main (){
+function Main({ news, loading }) {
+  const displayedNews = news ? news.slice(0, 9) : [];
 
-  const arr = [
-    {
-      title: 'НОВОСТИ IT',
-      desc: 'Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. '
-    },
-    {
-      title: 'НОВОСТИ IT',
-      desc: 'Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. '
-    },
-    {
-      title: 'НОВОСТИ IT',
-      desc: 'Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. '
-    },
-    {
-      title: 'НОВОСТИ IT',
-      desc: 'Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. '
-    },
-    {
-      title: 'НОВОСТИ IT',
-      desc: 'Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. '
-    },
-    {
-      title: 'НОВОСТИ IT',
-      desc: 'Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. '
-    },
-    {
-      title: 'НОВОСТИ IT',
-      desc: 'Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. '
-    },
-    {
-      title: 'НОВОСТИ IT',
-      desc: 'Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. '
-    },
-    {
-      title: 'НОВОСТИ IT',
-      desc: 'Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. '
-    },
-
-  ];
-
-  return(
+  return (
     <div className="main">
       <h1><span>Популярные</span> новости</h1>
-      <div className="container" >
-      {arr.map((item, index) => (<Card
-      key = {index}
-      title = {item.title}
-      desc =  {item.desc}
-      />)
-
-    )}
+      <div className="container">
+        {loading ? (
+          <div className="loading">Загрузка новостей...</div>
+        ) : displayedNews.length > 0 ? (
+          displayedNews.map((article, index) => (
+            <Card
+              key={index}
+              title={article.title}
+              desc={article.description}
+              image={article.urlToImage || "/img/main-photo.png"}
+              url={article.url}
+            />
+          ))
+        ) : (
+          <div className="no-news">Новости не найдены</div>
+        )}
       </div>
     </div>
-  )
+  );
 }
 
-export default Main
+export default Main;

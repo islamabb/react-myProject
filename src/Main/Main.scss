@@ -3,14 +3,16 @@
   flex-direction: column;
   align-items: center;
   width: 1140px;
-  height: 82vh;
+  height: 80vh;
   background-color: aliceblue;
   border-top-left-radius: 90px;
   border-top-right-radius: 90px;
   margin: 0 auto;
+  padding: 20px;
 
   h1{
     text-transform: uppercase;
+    margin-bottom: 20px;
   }
 
   span {
@@ -18,15 +20,22 @@
     
   }
 
-  .container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 10px;
-    border: 2px;
-    width: 95%;
-    height: 650px;
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+  .loading,
+  .no-news {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    font-size: 50px;
   }
 }
+
 

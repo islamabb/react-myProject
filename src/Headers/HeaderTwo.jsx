@@ -1,10 +1,12 @@
-import React from "react"
-import "./HeaderTwo.scss"
+import React from "react";
+import "./HeaderTwo.scss";
 
-function HeaderTwo (){
-  return(
-    <header className="hdr">Новости</header>
-  )
+function HeaderTwo({ showCategories }) {
+  return (
+    <header className="hdr">
+      {showCategories ? "Категории" : "Новости"}
+    </header>
+  );
 }
 
-export default HeaderTwo
+export default HeaderTwo;

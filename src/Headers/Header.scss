@@ -7,11 +7,14 @@
   .search{
     width: 505px;
     height: 46px;
-    background-color: #0039C7;
     border: solid 1px #FFF;
     border-radius: 5px 0 0 5px;
     font-size: 28px;
-    
+    background-color:rgb(255, 255, 255, 0);
+    color: #ffffff;
+    &:focus {
+    outline: none;
+  }
   }
 }
 

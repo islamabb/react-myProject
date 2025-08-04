@@ -1,19 +1,25 @@
-import "./Card.scss"
+import "./Card.scss";
 
-function Card(props) {
-  return(
+function Card({ title, desc, image, url }) {
+  return (
     <div className="mainCard">
-      <img className="card-photo"src="/img/main-photo.png" alt="photo"></img>
+      <img className="card-photo" src={image} alt="news" onError={(e) => {
+        e.target.src = "/img/main-photo.png";
+      }} />
       <div className="Card">
-      <h2>{props.title}</h2>
-      <p>{props.desc}</p>
-      <button className="btn-card">Подробнее</button>
-      <button className="btn-like">
-        <img src="/img/btn-like.png"></img>
-      </button>
+        <h2>{title}</h2>
+        <p>{desc}</p>
+        <div className="card-buttons">
+          <a href={url} target="_blank" rel="noopener noreferrer" className="btn-card">
+            Подробнее
+          </a>
+          <button className="btn-like">
+            <img src="/img/btn-like.png" alt="like" />
+          </button>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;

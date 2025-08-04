@@ -1,10 +1,12 @@
-.hdr{
+.hdr {
+  width: 575px;
+  height: 70px;
+  margin: 30px auto;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
   font-size: 96px;
-  font-weight: 700;
+  line-height: 20px;
   text-transform: uppercase;
-  color: aliceblue;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  color: #000000;
+  text-align: center;
 }
