@@ -3,11 +3,11 @@ import "./Main.scss";
 import Card from "./Card";
 
 function Main({ news, loading }) {
-  const displayedNews = news ? news.slice(0, 9) : [];
+  const displayedNews = news ? news.slice(0, 12) : [];
 
   return (
     <div className="main">
-      <h1><span>Популярные</span> новости</h1>
+      <h1><span className="main-span">Популярные</span> новости</h1>
       <div className="container">
         {loading ? (
           <div className="loading">Загрузка новостей...</div>

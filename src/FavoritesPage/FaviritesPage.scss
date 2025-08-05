@@ -1,0 +1,37 @@
+.main.favorites {
+  width: 1140px;
+  min-height: 917px;
+  background-color: #ffffff;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+
+  h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 48px;
+    color: #0039C7;
+    span {
+      color: #0039C7;
+    }
+  }
+
+  .no-favorites {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 24px;
+    color: #666;
+    padding: 40px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
