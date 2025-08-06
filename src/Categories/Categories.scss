@@ -15,9 +15,11 @@
     font-size: 18px;
     color: aliceblue;
     
-
     &:hover{
+      color: #0039C7;
       background-color: #ADFF00;
+      transform: translateY(3px);
+      transition: 0.4s ease-in-out;
     }
   }
 
@@ -36,7 +38,10 @@
     color: aliceblue;
 
     &:hover{
+      color: #0039C7;
       background-color: #ADFF00;
+      transform: translateY(3px);
+      transition: 0.4s ease-in-out;
     }
   }
 }
