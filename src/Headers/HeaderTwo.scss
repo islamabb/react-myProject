@@ -1,12 +1,37 @@
 .hdr {
   width: 575px;
   height: 70px;
-  margin: 50px auto;
+  margin: 30px auto;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 96px;
-  line-height: 20px;
+  line-height: 50px;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (max-width: 991px) {
+  .hdr {
+    font-size: 72px;
+    width: auto;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hdr {
+    font-size: 48px;
+    margin: 20px auto;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .hdr {
+    font-size: 36px;
+    margin: 15px auto;
+    padding: 5px 0;
+  }
 }

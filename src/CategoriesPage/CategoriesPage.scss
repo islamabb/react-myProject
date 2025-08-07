@@ -80,4 +80,36 @@
       font-size: 50px;
     }
   }
+
+
+  
+  .main.categories {
+  .categories-grid {
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      width: 100%;
+      height: auto;
+      padding: 10px;
+    }
+  }
+
+  .category-btn {
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 80px;
+      padding: 10px;
+      font-size: 24px;
+      flex-direction: column;
+    }
+  }
+
+  .category-icon {
+    @media (max-width: 768px) {
+      width: 40px;
+      height: 40px;
+      margin-left: 10px;
+    }
+  }
+}
 }

@@ -16,9 +16,9 @@
   
   .card-photo{
     width: 110px;
-    height: 195px;
+    height: 196.3px;
     border-radius: 0 35px 35px 0;
-    box-shadow: -13px 0px 6px -1px rgba(173, 255, 0, 0.7);
+    box-shadow: -10px 0px 3px 0px rgba(173, 255, 0, 0.9);
     object-fit: cover;
   }
   .Card{
@@ -35,7 +35,7 @@
   
   h2 {
       font-size: 16px;
-      margin: 5px 0 15px 5px;
+      margin: 5px 3px 15px 5px;
       display: -webkit-box;
       -webkit-line-clamp: 2; 
       line-clamp: 2; 
@@ -59,14 +59,12 @@
     }
 
   .btn-card{
-    width: 81px;
-    height: 29px;
     border-radius: 7px;
     padding: 6px 5px 6px 5px;
     background-color: #ADFF00;
     cursor: pointer;
     border: #ADFF00;
-    margin-right: 5px;
+    margin-right: 10px;
   }
 
 .btn-like {
@@ -77,6 +75,13 @@
   border: 1px solid #ADFF00;
   cursor: pointer;
   transition: all 0.3s;
+  padding: 0px;
+
+  img{
+    height: 26px;
+    width: 28px;
+
+  }
 
   &:hover {
     background-color: #ADFF00;
@@ -87,4 +92,172 @@
     background-color: #ADFF00;
   }
 }
+}
+
+.card-buttons{
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .mainCard {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    height: 160px;
+    border-radius: 25px;
+
+    .card-photo {
+      width: 90px;
+      height: 160px;
+      border-radius: 0 25px 25px 0;
+    }
+
+    .Card {
+      width: calc(100% - 90px);
+      height: 144px;
+      padding: 10px;
+    }
+
+    h2 {
+      font-size: 14px;
+      margin: 5px 0 10px 5px;
+    }
+
+    p {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    .btn-card {
+      padding: 4px 6px;
+      font-size: 11px;
+    }
+
+    .btn-like {
+      width: 26px;
+      height: 26px;
+
+      img {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .mainCard {
+    height: 140px;
+
+    .card-photo {
+      width: 80px;
+      height: 140px;
+    }
+
+    .Card {
+      width: calc(100% - 80px);
+      padding: 8px;
+    }
+
+    h2 {
+      font-size: 13px;
+      margin: 3px 0 8px 5px;
+    }
+
+    p {
+      font-size: 11px;
+    }
+
+    .btn-card {
+      font-size: 10px;
+      padding: 3px 5px;
+    }
+
+    .btn-like img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .mainCard {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    height: 160px;
+    border-radius: 25px;
+
+    .card-photo {
+      width: 90px;
+      height: 160px;
+      border-radius: 0 25px 25px 0;
+    }
+
+    .Card {
+      width: calc(100% - 90px);
+      height: 144px;
+      padding: 10px;
+    }
+
+    h2 {
+      font-size: 14px;
+      margin: 5px 0 10px 5px;
+    }
+
+    p {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    .btn-card {
+      padding: 4px 6px;
+      font-size: 11px;
+    }
+
+    .btn-like {
+      width: 26px;
+      height: 26px;
+
+      img {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .mainCard {
+    height: 140px;
+
+    .card-photo {
+      width: 80px;
+      height: 140px;
+    }
+
+    .Card {
+      width: calc(100% - 80px);
+      padding: 8px;
+    }
+
+    h2 {
+      font-size: 13px;
+      margin: 3px 0 8px 5px;
+    }
+
+    p {
+      font-size: 11px;
+    }
+
+    .btn-card {
+      font-size: 10px;
+      padding: 3px 5px;
+    }
+
+    .btn-like img {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }

@@ -30,3 +30,153 @@
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .App-header {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+
+    .logo {
+      width: 140px;
+      height: 38px;
+    }
+
+    .input-mat {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .search {
+      font-size: 16px;
+    }
+
+    .btn-categ {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .categ,
+    .like {
+      width: 120px;
+      height: 40px;
+      font-size: 14px;
+      gap: 6px;
+
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .App-header {
+    .logo {
+      width: 120px;
+      height: 32px;
+    }
+
+    .search {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+
+    .icon {
+      padding: 15px 12px;
+    }
+
+    .categ,
+    .like {
+      width: 110px;
+      height: 36px;
+      font-size: 13px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .App-header {
+    .logo {
+      width: 120px;
+      height: 32px;
+    }
+
+    .search {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+
+    .icon {
+      padding: 15px 12px;
+    }
+
+    .categ,
+    .like {
+      width: 110px;
+      height: 36px;
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 767px) {
+  .App-header {
+    gap: 10px;
+    padding: 10px;
+
+    .logo {
+      width: 140px;
+      height: 38px;
+    }
+
+    .input-mat {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .search {
+      font-size: 16px;
+    }
+
+    .btn-categ {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .categ,
+    .like {
+      width: 120px;
+      height: 40px;
+      font-size: 14px;
+      gap: 6px;
+
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    .logo {
+      width: 120px;
+      height: 32px;
+    }
+
+    .search {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+
+    .icon {
+      padding: 15px 12px;
+    }
+
+    .categ,
+    .like {
+      width: 110px;
+      height: 36px;
+      font-size: 13px;
+    }
+  }
+}
+}
